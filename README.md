@@ -1,5 +1,6 @@
 [![GoDoc](https://godoc.org/github.com/TerraTech/TTuuidGen/pkg/TTuuid?status.svg)](https://godoc.org/github.com/TerraTech/TTuuidGen/pkg/TTuuid)
 [![Build Status](https://travis-ci.org/TerraTech/TTuuidGen.svg?branch=master)](https://travis-ci.org/TerraTech/TTuuidGen)
+[![Go Report Card](https://goreportcard.com/badge/github.com/TerraTech/TTuuidGen)](https://goreportcard.com/report/github.com/TerraTech/TTuuidGen)
 
 ## TTuuidGen
 
