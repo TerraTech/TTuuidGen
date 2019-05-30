@@ -34,7 +34,7 @@ type optionsT struct {
 
 func handleFlags() *optionsT {
 	var err error
-	var options *optionsT = &optionsT{}
+	var options = &optionsT{}
 
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "usage: %s [-hV] {[--s<1|4>] | [-H <int>] [length]}\n", filepath.Base(os.Args[0]))

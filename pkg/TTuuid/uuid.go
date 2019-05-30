@@ -26,14 +26,16 @@ import (
 	"golang.org/x/crypto/sha3"
 )
 
+// DefaultLength is the standard UUID length.
 const DefaultLength = 36
 
+// TTuuid holds info for both Hyphens and Length
 type TTuuid struct {
 	Hyphens int
 	Length  int
 }
 
-// New makes a new TTuuid object for given number of hyphens and length of resultant uuid string.
+// New returns a new TTuuid object for given number of hyphens and length of resultant uuid string.
 //
 // length == 0, will use default: 36
 func New(hyphens, length int) (*TTuuid, error) {
@@ -93,7 +95,7 @@ func Random() goUuid.UUID {
 	return goUuid.Must(goUuid.NewV4())
 }
 
-// Random returns a standard time based UUIDv1 object.
+// Time returns a standard time based UUIDv1 object.
 func Time() goUuid.UUID {
 	return goUuid.Must(goUuid.NewV1())
 }

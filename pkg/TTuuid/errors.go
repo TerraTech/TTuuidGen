@@ -21,6 +21,7 @@ import (
 	"fmt"
 )
 
+// ErrTooManyHyphens satisfies error interface.
 type ErrTooManyHyphens int
 
 func (e ErrTooManyHyphens) Error() string {
