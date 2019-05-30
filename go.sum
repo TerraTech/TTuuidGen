@@ -1,7 +1,5 @@
 github.com/TerraTech/FQversion v1.0.2 h1:Tr3qQdTCWsrNB2YJkoLysCRIBnRhaTKlB8hsFGVYr6Y=
 github.com/TerraTech/FQversion v1.0.2/go.mod h1:JhguVn1y7n0TjI1mg1ZziEiJX6FD6S/WCvLPJ+qBgxY=
-github.com/TerraTech/FQversion/tools/genVersion v0.0.0-20190528181039-24a82600b6ae h1:vzhEPP6drDtB6F2CWEMkqzxgkhvrvkTmDltotUJWUd4=
-github.com/TerraTech/FQversion/tools/genVersion v0.0.0-20190528181039-24a82600b6ae/go.mod h1:kczxHYXcPxF8eY9Tte0+HQkJV/fM+AG4Uq49IgTdimY=
 github.com/TerraTech/FQversion/tools/genVersion v0.0.0-20190530061517-863bce5f8905 h1:9+Yu7hk5mFzn8CSmM2ivUNrSjSxkPpcyU7Z+1hkxap8=
 github.com/TerraTech/FQversion/tools/genVersion v0.0.0-20190530061517-863bce5f8905/go.mod h1:kczxHYXcPxF8eY9Tte0+HQkJV/fM+AG4Uq49IgTdimY=
 github.com/TerraTech/pflag v1.0.4-0.20190523114457-3d0973303b16 h1:jSkl7jhNc1bDB/E2zmS0xKRHkpkfO03nlkZsylS/grA=
