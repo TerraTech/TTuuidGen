@@ -41,7 +41,6 @@ func handleFlags() *optionsT {
 		flag.PrintDefaults()
 	}
 
-	//help := flag.Bool("h", false, "help")
 	flag.IntVarP(&options.hyphens, "", "H", 0, "number of hyphens to add")
 	flag.BoolVar(&options.s1, "s1", false, "emit standard uuid V1 (time based)")
 	flag.BoolVar(&options.s4, "s4", false, "emit standard uuid V4 (random based)")
