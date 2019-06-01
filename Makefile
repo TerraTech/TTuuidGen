@@ -31,6 +31,10 @@ fmt:
 	@go fmt ./...
 	@$(P_MAKE_TTUUID) fmt
 
+.PHONY: install
+install:
+	@go install $(D_CMD)
+
 .PHONY: small
 small: vgen $(GOFILES)
 	@go build -ldflags="-s -w" -o $(PROG) $(D_CMD)
