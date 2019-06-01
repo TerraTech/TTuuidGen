@@ -5,21 +5,19 @@ BUILD         := $(shell date '+%Y%m%d@%T')
 LIB           :=
 PKG           := github.com/TerraTech/$(PROG)
 
-CLEAN := $(PROG) version_autogen.go
-
-D_VENDOR	:= $(PWD)/vendor
-F_AUTOGEN_LIB	:=
-F_AUTOGEN_MAIN	:= ./version_autogen.go
+D_CMD		:= ./cmd/$(PROG)
+D_PKG		:= ./pkg/TTuuid
+F_AUTOGEN_MAIN	:= $(D_CMD)/version_autogen.go
 PKG_FQVERSION	:= github.com/TerraTech/FQversion
-P_GENVERSION	:= $(D_VENDOR)/$(PKG_FQVERSION)/tools/genVersion.go
-P_MAKE_TTUUID	:= make --no-print-directory -C pkg/TTuuid
+P_MAKE_TTUUID	:= make --no-print-directory -C $(D_PKG)
 
-GOFILES := *.go pkg/*/*.go
+CLEAN := $(PROG) $(F_AUTOGEN_MAIN)
+GOFILES := $(D_CMD)/*.go $(D_PKG)/*.go
 
 all: small
 
 $(PROG): vgen $(GOFILES)
-	@go build
+	@go build -o $(PROG) $(D_CMD)
 
 .PHONY: build
 build: $(PROG)
@@ -35,7 +33,7 @@ fmt:
 
 .PHONY: small
 small: vgen $(GOFILES)
-	@go build -ldflags="-s -w"
+	@go build -ldflags="-s -w" -o $(PROG) $(D_CMD)
 
 .PHONY: test
 test:
